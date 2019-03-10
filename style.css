@@ -2,14 +2,49 @@ body {
     background: #f7f7f7;
 }
 
-.profile-container {
-
+.social-container {
+    clear: both;
 }
 
 #bio {
     float: left;
+    width: 25%;
+    background-color: azure;
+    height: 180px;
+    text-align: center;
+
+}
+
+#bio p{
+    text-align: center;
+    padding-right: 100px;
 }
 
 #info {
     float: right;
+    width: 74%;
+    height: 180px;
+    background-color: azure;
+}
+
+#profile-pic {
+    position: relative;
+    float: left;
+    bottom: 20%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+div {
+    background-color: aqua;
+}
+
+.profile-container {
+    background-color: red;
+    height: 180px;
+}
+
+.social-container {
+    background-color: red;
 }
