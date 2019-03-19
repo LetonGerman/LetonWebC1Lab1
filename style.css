@@ -108,7 +108,7 @@ li {
 
 .social-container div,
 .profile-container div {
-    overflow: scroll;
+    overflow: auto;
 }
 
 @media (max-width: 1300px) {
