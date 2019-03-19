@@ -1,50 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
-    background: #f7f7f7;
+    background: hsl(0, 0%, 97%);
+    font-family: HelveticaNeueCyr, Arial, "Times New Roman";
+}
+
+h3 {
+    font-weight: bold;
+}
+
+img {
+    clear: bottom;
 }
 
 .social-container {
     clear: both;
 }
 
+.Profile {
+    background-color: hsl(195, 53%, 79%);
+}
+
+
 #bio {
+    margin-top: 5px;
+    margin-left: 1%;
+    padding: 0px 12px;
     float: left;
-    width: 25%;
-    background-color: azure;
-    height: 180px;
+    width: 24%;
+    min-height: 180px;
     text-align: center;
 
 }
 
-#bio p{
-    text-align: center;
+#bio p {
     padding-right: 100px;
 }
 
 #info {
+    margin-top: 5px;
+    margin-right: 1%;
+    padding: 0px 12px;
     float: right;
-    width: 74%;
+    width: 73%;
     height: 180px;
-    background-color: azure;
+}
+
+#friends {
+    padding: 0px 12px;
+    margin-left: 1%;
+    margin-top: 5px;
+    float: left;
+    width: 11%;
+    min-height: 500px;
+}
+
+#blog {
+    margin-right: 1%;
+    margin-top: 5px;
+    padding: 0px 12px;
+    float: right;
+    width: 86%;
+    min-height: 500px;
+}
+
+#blog p, h3,
+#bio p,
+#info p, img {
+    margin: 12px 0px;
 }
 
 #profile-pic {
     position: relative;
     float: left;
+    clear: bottom;
     bottom: 20%;
     border-style: solid;
     border-width: 2px;
-    border-color: black;
+    border-color: hsl(0, 0%, 0%);
 }
 
-div {
-    background-color: aqua;
+#bio h2,
+#blog h2,
+#friends h2,
+#info h2 {
+    text-align: center;
+    background-color: hsl(195, 53%, 70%);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 12px 0px;
 }
 
 .profile-container {
-    background-color: red;
-    height: 180px;
+    clear: both;
 }
 
-.social-container {
-    background-color: red;
+.social-container div,
+.profile-container div {
+    overflow: scroll;
+}
+
+@media (max-width: 1300px) {
+    .social-container div,
+    .profile-container div {
+        display: block;
+    }
+
+    #bio,
+    #info,
+    #friends,
+    #blog {
+        height: auto;
+        width: 90%;
+        float: none;
+        clear: both;
+        margin: 10px auto;
+    }
+
+    #friends {
+        text-align: center;
+    }
 }
